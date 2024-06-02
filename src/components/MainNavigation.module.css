@@ -1,0 +1,119 @@
+
+
+.header {
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  background-color: #06416c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 2px; 
+  transform: translateY(0);
+  transition: transform 0.3s ease; 
+  animation: gradientMovement 5s ease infinite alternate;
+ 
+}
+
+
+
+  .list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+
+  .list1 {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: flex-start;
+    padding-left: 7rem;
+  }
+  
+  .list2 {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    align-items: center;
+    font-size: 1.2em;
+    padding-left: 63rem;
+  }
+  
+  .list a {
+    text-decoration: none;
+    color: var(--color-gray-300);
+  }
+  
+  
+  .list a:hover,
+  .list a.active {
+    color: var(--color-gray-100);
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  .icon {
+    width: 5rem; 
+    height: 5rem;
+    position: absolute; 
+    left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list2 {
+  position: relative;
+}
+
+.menuTrigger {
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  margin-top: 11rem;
+  left: 70rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  padding: 1rem;
+  width: 12rem;
+  height: 16rem;
+  z-index: 200;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);  
+  
+}
+
+
+.menuLink {
+  text-decoration: none;
+  color: white;
+  padding: 8px 0;
+  align-items: center;
+}

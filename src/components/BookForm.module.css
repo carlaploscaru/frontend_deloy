@@ -1,0 +1,85 @@
+.form {
+    max-width: 60rem;
+    height: 50rem;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 1cap;
+    background-color: #817f7f;
+    filter: brightness(1.5); 
+    border-color: rgb(101, 100, 100);
+    
+  }
+  
+  
+  
+  
+  .form label {
+    font-weight:bold;
+    color: #313030;
+    text-decoration: none;
+  }
+  
+  .form input,
+  .form textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.25rem;
+  }
+  
+  .actions {
+    margin-top: 8%;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color:#ffffff;
+    color: #313030;
+    border: 1px solid #313030;
+    font-size:large;
+    font-weight:bold;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--color-gray-300);
+  }
+  
+  .actions button:hover {
+    background-color:rgb(114, 166, 211);
+  }
+  
+  
+  .form input {
+    background-color: rgb(128, 125, 125);
+    color: rgb(253, 250, 250);
+    border: 1px solid rgb(52, 51, 51);
+    border-radius: 3px;
+    
+  }
+  
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #57a2d7; 
+    border-radius: 8px; 
+    padding: 1rem;
+    transition: box-shadow 0.3s ease;
+    background-color: rgba(202, 200, 200, 0.5);
+  }
+  
+  
+  .form1:hover {
+    box-shadow: 3px 10px 10px #3f9bd5; 
+  }

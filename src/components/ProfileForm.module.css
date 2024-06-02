@@ -1,0 +1,55 @@
+.form {
+    max-width: 50rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    border-left: 1px solid rgb(129, 125, 125);
+    padding-left: 3rem;
+    
+  }
+  
+  .form label,
+  .form input,
+  .form textarea {
+    display: block;
+    width: 100%;
+    color: #313030;
+    text-decoration: none;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.25rem;
+    
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    background-color: rgb(133, 130, 130);
+    color: #201c1c;
+    border: none;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--color-gray-300);
+  }
+  
+  .actions button:hover {
+    background-color: #b6b0b0;
+  }
+  
+  .actions a:hover {
+    background-color: #d2c6c6;
+  }
