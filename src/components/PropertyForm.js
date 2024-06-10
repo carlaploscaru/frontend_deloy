@@ -40,7 +40,7 @@ const PropertyForm = ({ method, property }) => {
     const token = getAuthToken();
 
     const getCategories = async () => {
-      const response = await fetch("https://ibook-deploy.onrender.com/category", {
+      const response = await fetch("https://ibook-wesite.onrender.com/category", {
         method: "GET",
         headers: {
           Authorization: "Bearer " + token,
@@ -94,7 +94,7 @@ const PropertyForm = ({ method, property }) => {
       event.target.id.split("\\")[2] + "separator" + property._id;
 
     const response = await fetch(
-      `https://ibook-deploy.onrender.com/place/image/${imageAndPlaceId}`,
+      `https://ibook-wesite.onrender.com/place/image/${imageAndPlaceId}`,
       {
         method: "DELETE",
         headers: {
@@ -270,7 +270,7 @@ const PropertyForm = ({ method, property }) => {
                 <img
                   height={150}
                   width={150}
-                  src={`https://ibook-deploy.onrender.com/${img}`}
+                  src={`https://ibook-wesite.onrender.com/${img}`}
                 />
                 <button
                   type="button"
@@ -394,11 +394,11 @@ export const action = async ({ request, params }) => {
   //   userId: data.get("owner"),
   // };
 
-  let url = "https://ibook-deploy.onrender.com/place";
+  let url = "https://ibook-wesite.onrender.com/place";
 
   if (method === "PATCH") {
     const propertyId = params.propertyId;
-    url = "https://ibook-deploy.onrender.com/place/" + propertyId;
+    url = "https://ibook-wesite.onrender.com/place/" + propertyId;
   }
 
   const token = getAuthToken();

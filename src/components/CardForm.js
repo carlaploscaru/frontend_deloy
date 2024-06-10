@@ -69,7 +69,7 @@ const CardForm = () => {
         if (!error) {
             try {
                 const { id } = paymentMethod
-                const response = await axios.post("https://ibook-deploy.onrender.com/sale/payment", {
+                const response = await axios.post("https://ibook-wesite.onrender.com/sale/payment", {
                     amount: actionData.price,
                     id
                 })

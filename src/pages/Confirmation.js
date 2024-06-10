@@ -14,7 +14,7 @@ export const action = async ({ request }) => {
   };
 
   const response = await fetch(
-    "https://ibook-deploy.onrender.com/confirm-account-registry",
+    "https://ibook-wesite.onrender.com/confirm-account-registry",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },

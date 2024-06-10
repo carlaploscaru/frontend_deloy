@@ -15,7 +15,7 @@ export const action = async ({ request }) => {
     };
   
     const response = await fetch(
-      "https://ibook-deploy.onrender.com/new-password",
+      "https://ibook-wesite.onrender.com/new-password",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

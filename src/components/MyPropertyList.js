@@ -55,7 +55,7 @@ const MyPropertyList = ({ properties }) => {
                     {
                       <>
                         <img
-                          src={`https://ibook-deploy.onrender.com/${property.image[0]}`}
+                          src={`https://ibook-wesite.onrender.com/${property.image[0]}`}
                           alt={property.title}
                         ></img>
                         <div style={{ color: 'white' }} className={classes.content}>

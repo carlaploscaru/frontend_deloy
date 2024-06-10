@@ -80,7 +80,7 @@ const ProfileForm = ({ user }) => {
               <img
                 height={150}
                 width={150}
-                src={`https://ibook-deploy.onrender.com/${user.image}`}
+                src={`https://ibook-wesite.onrender.com/${user.image}`}
               />
 
             </>

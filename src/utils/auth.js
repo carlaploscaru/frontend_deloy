@@ -33,7 +33,7 @@ const loadMe = async () => {
   if (!token) {
     return null;
   }
-  const response = await fetch("https://ibook-deploy.onrender.com/user/me", {
+  const response = await fetch("https://ibook-wesite.onrender.com/user/me", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,

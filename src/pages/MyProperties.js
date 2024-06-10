@@ -30,7 +30,7 @@ export default MyPropertiesPage;
 
 const loadMyProperties = async (ownerId) => {
   const token = getAuthToken();
-  const response = await fetch("https://ibook-deploy.onrender.com/place/owner/" + ownerId, {
+  const response = await fetch("https://ibook-wesite.onrender.com/place/owner/" + ownerId, {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -62,7 +62,7 @@ export const action = async ({ request }) => {
 
 
   if(propertyid && propertyid !==''){
-  const response = await fetch(`https://ibook-deploy.onrender.com/place/${propertyid}`, {
+  const response = await fetch(`https://ibook-wesite.onrender.com/place/${propertyid}`, {
     method: "DELETE",
     headers: {
       Authorization: "Bearer " + token,

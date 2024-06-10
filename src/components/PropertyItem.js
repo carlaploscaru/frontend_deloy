@@ -71,7 +71,7 @@ const updateData =() => {
           {property.image && property.image.map((img, index) => (
             <SwiperSlide key={index}>
               <div>
-                <img width={300} height={300} style={{ margin: "10px" }} src={`https://ibook-deploy.onrender.com/${img}`} />
+                <img width={300} height={300} style={{ margin: "10px" }} src={`https://ibook-wesite.onrender.com/${img}`} />
               </div>
             </SwiperSlide>
           ))}
@@ -96,7 +96,7 @@ const updateData =() => {
         <button style={{ color: "black", backgroundColor: "#a4ddf4", marginBottom:"5px"}} onClick={openExeFile}>Open House Tour</button>
         {showFrame && (
           <div style={{ width: '800px', height: '600px', border: '1px solid grey'}}>
-            <iframe title="House Tour" src={`http://localhost/testvirtualtur/`} width="100%" height="100%"  />
+            <iframe title="House Tour" src={`https://ibook-wesite.onrender.com/testvirtualtur/`} width="100%" height="100%"  />
           </div>
         )}
       </div>

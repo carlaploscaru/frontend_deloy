@@ -17,7 +17,7 @@ const BookList = ({ reservations }) => {
     const onRateHandler = async (id, rate) => {
         const token = getAuthToken();
 
-        const response = await fetch(`https://ibook-deploy.onrender.com/sale/${id}`, {
+        const response = await fetch(`https://ibook-wesite.onrender.com/sale/${id}`, {
             method: "PUT",
             headers: {
                 Authorization: "Bearer " + token,
@@ -47,7 +47,7 @@ const BookList = ({ reservations }) => {
             return;
         }
 
-        const response = await fetch(`https://ibook-deploy.onrender.com/sale/${id}/comment`, {
+        const response = await fetch(`https://ibook-wesite.onrender.com/sale/${id}/comment`, {
             method: "PUT",
             headers: {
                 Authorization: "Bearer " + token,

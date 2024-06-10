@@ -64,7 +64,7 @@ export default PropertyDetailPage;
 const loadClients = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/sale/clients", {
+  const response = await fetch("https://ibook-wesite.onrender.com/sale/clients", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -92,7 +92,7 @@ console.log("ffffffffffffffffffffffffffffffffffffff",resData)
 
 const loadProperty = async (id) => {
   const token = getAuthToken();
-  const response = await fetch("https://ibook-deploy.onrender.com/place/" + id, {
+  const response = await fetch("https://ibook-wesite.onrender.com/place/" + id, {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -129,7 +129,7 @@ const loadProperties = async (filterArray) => {
   
 let response;
   if (Object.keys(filterArray).length === 0) {
-    response = await fetch(`https://ibook-deploy.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}`, {
+    response = await fetch(`https://ibook-wesite.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}`, {
       method: "GET",
       headers: {
         Authorization: "Bearer " + token,
@@ -137,7 +137,7 @@ let response;
     });
   } else {
     response = await fetch(
-      `https://ibook-deploy.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}&tara=${filterArray["tara"]}&oras=${filterArray["oras"]}&data_start=${filterArray["data_start"]}&data_end=${filterArray["data_end"]}`,
+      `https://ibook-wesite.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}&tara=${filterArray["tara"]}&oras=${filterArray["oras"]}&data_start=${filterArray["data_start"]}&data_end=${filterArray["data_end"]}`,
       {
         method: "GET",
         headers: {

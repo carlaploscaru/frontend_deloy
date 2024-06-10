@@ -107,7 +107,7 @@ const MainNavigation = ({ ownerId, user }) => {
                     <p>{user && user.image && (
                       <><img
                         style={{ width: '60px', height: '60px', borderRadius: '50%',marginBottom:"2rem" }}
-                        src={`https://ibook-deploy.onrender.com/${user.image}`}
+                        src={`https://ibook-wesite.onrender.com/${user.image}`}
                         alt="User Avatar" />
                       </>)}
                     </p>

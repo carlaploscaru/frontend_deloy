@@ -30,7 +30,7 @@ const PropertyList = ({ properties }) => {
   useEffect(() => {
 
     const getCategories = async () => {
-      const response = await fetch("https://ibook-deploy.onrender.com/category", {
+      const response = await fetch("https://ibook-wesite.onrender.com/category", {
         method: "GET",
         headers: {
           Authorization: "Bearer " + token,
@@ -200,7 +200,7 @@ const PropertyList = ({ properties }) => {
               {
                 <>
                   <img
-                    src={`https://ibook-deploy.onrender.com/${property.image[0]}`}
+                    src={`https://ibook-wesite.onrender.com/${property.image[0]}`}
                     alt={property.title}
                     style={{border: "5px solid #333"}}
                   ></img>

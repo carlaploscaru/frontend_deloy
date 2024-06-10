@@ -76,7 +76,7 @@ export const action = async ({ request, params }) => {
   formData.append("name", data.name);
   formData.append("image", data.images);
 
-  const response = await fetch("https://ibook-deploy.onrender.com/user/me", {
+  const response = await fetch("https://ibook-wesite.onrender.com/user/me", {
     method: "PATCH",
     headers: {
       Authorization: "Bearer " + token,
@@ -91,7 +91,7 @@ export const action = async ({ request, params }) => {
 const loadRezervations = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/sale", {
+  const response = await fetch("https://ibook-wesite.onrender.com/sale", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -121,7 +121,7 @@ const loadRezervations = async () => {
 const loadClients = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/sale/clients", {
+  const response = await fetch("https://ibook-wesite.onrender.com/sale/clients", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -151,7 +151,7 @@ const loadClients = async () => {
 const loadMe = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/user/me", {
+  const response = await fetch("https://ibook-wesite.onrender.com/user/me", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,

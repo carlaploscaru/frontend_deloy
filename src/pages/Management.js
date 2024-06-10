@@ -60,7 +60,7 @@ export const action = async ({ request, params }) => {
   const userId= data.get("userId")
 
   if(userId && userId !==''){
-    const response = await fetch(`https://ibook-deploy.onrender.com/user/${userId}`, {
+    const response = await fetch(`https://ibook-wesite.onrender.com/user/${userId}`, {
       method: "PATCH",
       headers: {
         Authorization: "Bearer " + token,
@@ -69,7 +69,7 @@ export const action = async ({ request, params }) => {
     })
   }else{
     if (request.method === "PATCH") {
-      const response = await fetch(`https://ibook-deploy.onrender.com/category/${catid}`, {
+      const response = await fetch(`https://ibook-wesite.onrender.com/category/${catid}`, {
         method: "PATCH",
         headers: {
           Authorization: "Bearer " + token,
@@ -78,7 +78,7 @@ export const action = async ({ request, params }) => {
         body: JSON.stringify({ title: catTitle })
       })
     } else {
-      const response = await fetch(`https://ibook-deploy.onrender.com/category/${catid}`, {
+      const response = await fetch(`https://ibook-wesite.onrender.com/category/${catid}`, {
         method: "DELETE",
         headers: {
           Authorization: "Bearer " + token,
@@ -95,7 +95,7 @@ export const action = async ({ request, params }) => {
 const loadCategories = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/category", {
+  const response = await fetch("https://ibook-wesite.onrender.com/category", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,
@@ -122,7 +122,7 @@ const loadCategories = async () => {
 const loadUsers = async () => {
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/user", {
+  const response = await fetch("https://ibook-wesite.onrender.com/user", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + token,

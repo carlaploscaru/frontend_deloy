@@ -22,7 +22,7 @@ const CategoryList = ({ categories }) => {
     const submitCategoryHandler = async (id) => {
         const token = getAuthToken();
 
-        const response = await fetch(`https://ibook-deploy.onrender.com/category`, {
+        const response = await fetch(`https://ibook-wesite.onrender.com/category`, {
             method: "POST",
             headers: {
                 Authorization: "Bearer " + token,

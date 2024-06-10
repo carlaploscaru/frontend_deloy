@@ -124,7 +124,7 @@ export const action = async ({ request, params }) => {
 
   const token = getAuthToken();
 
-  const response = await fetch("https://ibook-deploy.onrender.com/sale", {
+  const response = await fetch("https://ibook-wesite.onrender.com/sale", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

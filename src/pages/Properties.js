@@ -34,7 +34,7 @@ const loadProperties = async (filterArray) => {
   const token = getAuthToken();
   let response;
   if (Object.keys(filterArray).length === 0) {
-    response = await fetch(`https://ibook-deploy.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}`, {
+    response = await fetch(`https://ibook-wesite.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}`, {
       method: "GET",
       headers: {
         Authorization: "Bearer " + token,
@@ -42,7 +42,7 @@ const loadProperties = async (filterArray) => {
     });
   } else {
     response = await fetch(
-      `https://ibook-deploy.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}&category=${filterArray["category"]}&tara=${filterArray["tara"]}&oras=${filterArray["oras"]}&data_start=${filterArray["data_start"]}&data_end=${filterArray["data_end"]}`,
+      `https://ibook-wesite.onrender.com/place?itemsperpage=${filterArray["itemsperpage"]}&page=${filterArray["page"]}&category=${filterArray["category"]}&tara=${filterArray["tara"]}&oras=${filterArray["oras"]}&data_start=${filterArray["data_start"]}&data_end=${filterArray["data_end"]}`,
       {
         method: "GET",
         headers: {
