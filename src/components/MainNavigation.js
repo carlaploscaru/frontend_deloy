@@ -45,7 +45,7 @@ const MainNavigation = ({ ownerId, user }) => {
                     isActive ? classes.active : undefined
                   }
                 >
-                  Managemant
+                  Management
                 </NavLink>
               </li>
             )}
